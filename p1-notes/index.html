@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="logo.ico">
+	<title>Learning HTML and CSS</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<h1>Important Concepts</h1>
+
+<div class="box">
+	<div class="section">
+		<h2>Contents</h2>
+		<ol class="text">
+			<li><a href="#html">HTML</a>
+				<ul>
+					<li><a href="#html-1">Basic of the Web</a></li>
+					<li><a href="#html-2">How the Web Works</a></li>
+					<li><a href="#html-3">About HTML</a></li>
+					<li><a href="#html-4">Tags and Elements</a></li>
+					<li><a href="#html-5">Attributes</a></li>
+					<li><a href="#html-6">Inline vs Block Elements</a></li>
+					<li><a href="#html-7">Blank Spaces</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#css">CSS</a>
+				<ul>
+					<li><a href="#css-1">What is CSS</a></li>
+					<li><a href="#css-2">HTML-CSS DOM</a></li>
+					<li><a href="#css-3">3 ways to add CSS</a></li>
+					<li><a href="#css-4">3 types of selectors</a></li>
+					<li><a href="#css-5">The box Model</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#extra">Extra's</a>
+				<ul>
+					<li><a href="#extra-1">Why Computers are Stupid</a></li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+</div>
+
+<div class="box" id="html">
+	<h2>HTML</h2>
+	<div class="section" id="html-1">
+		<h3>Basic of the Web</h3>
+		<ul>
+			<li class="text">HTML</li>
+			<li class="text">URL's</li>
+			<li class="text">HTTP</li>
+			<li class="text">Web Applications</li>
+		</ul>
+	</div>
+	
+	<div class="section" id="html-2">
+		<h3>
+			How the Web Works
+		</h3>
+		<div class="text">
+			<p>Your browser makes requests via the Internet to servers. These requests are use a protocol called <em>HTTP</em>. And the servers respond with files that the browser displays.
+			Some examples of browsers include Chrome, Safari, Firefox, Internet Explorer, and Edge. You're probably running one of those right this moment.
+			These servers are computers just like yours except they are optimized for sitting in a closet and hosting files rather than sitting on your desk browsing these files. And the protocol HTTP is just a very simple protocol that your browser uses to communicate with these servers. We'll mostly be focusing on the browser component in this section for rendering HTML files.
+			<a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/e-48329854/m-48480496">This video</a> does a good job of explaining</p>
+		</div>
+	</div>
+
+	<div class="section" id="html-3">
+		<h3>About HTML</h3>
+		<div class="text">
+			<p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage, and it is the most widely used language to write Web Pages.</p>
+		</div>
+		<ul>
+			<li class="text">
+				<b>Hypertext</b> refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.
+			</li>
+			<li class="text">
+				As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.
+			</li>
+		</ul>
+		<a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48724340">Check this video</a>
+		</div>
+	
+	<div class="section" id="html-4">	
+		<h3>Tags and Elements</h3>
+		<div class="text">
+			<p>HTML documents are made up of HTML elements. When writing HTML, we tell browsers the type of each element by using HTML tags. An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash.
+			<a href="https://www.udacity.com/course/viewer#!/c-nd000/l-3873828673/m-48723444">This video</a> explains the distinction well</p>
+		</div>
+	</div>
+	
+	<div class="section" id="html-5">
+		<h3>Attributes</h3>
+		<ul>
+			<li class="text">All HTML elements can have attributes</li>
+			<li class="text">Attributes provide additional information about an element</li>
+			<li class="text">Attributes are always specified in the start tag</li>
+			<li class="text">Attributes usually come in name/value pairs like: name="value"</li>
+		</ul>
+	</div>
+	
+	<div class="section" id="html-6">	
+		<h3>Inline vs Block Elements</h3>
+		<ul>
+			<li class="text">
+				A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+			</li>
+			<li class="text">
+				An inline element does not start on a new line and only takes up as much width as necessary
+			</li>
+			<li class="text">
+				Some of the inline elements are <code>&lt;b&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;span&gt;</code> etc.
+			</li>
+			<li class="text">
+				Example of block elements are <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;form&gt;</code> etc.
+			</li>
+		</ul>
+	</div>
+	
+	<div class="section" id="html-7">
+		<h3>Blank Spaces</h3>
+		<div class="text">
+			<p>HTML assumes multiple white spaces as a single space. In order to give spaces, we can use the following:</p>
+			<ul>
+				<li><code> &lt;br&gt;</code> for line breaks</li>
+				<li><code> &amp;nbsp;</code> for a single space</li>
+				<li><code> &lt;p&gt;</code> for a new paragraph (leaves some space after previous block of text)</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="box" id="css">
+	<h2>CSS</h2>
+	<div class="section" id="css-1">
+		<h3>What is CSS</h3>
+		<div class="text">
+			<p>CSS refers to Cascading Style Sheets. These are use to add styles to webpage
+			There can be more than one css in the website and the most local declaration is given maximum priority.</p>
+		</div>
+	</div>
+	
+	<div class="section" id="css-2">
+		<h3>HTML-CSS DOM</h3>
+		<div class="text">
+			<ul>
+				<li>HTML has a tree like structure, wth elements nested inside other elements. Link to <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/c166b0b6-d5c7-4cc9-9595-2b7a1c7b75e1/modules/01b5b80f-8256-4126-bf54-b11f809acd88/lessons/3c2aede1-60ac-409e-90a7-b4edbcb2fb83/concepts/25961388150923">Udacity video</a>. When programmers talk about the DOM(Document Object Model) they are talking about the tree like structure of a web page.</li>
+      			<li>HTML controls the "structure" of the web page</li>
+              	<li>CSS controls the "style" of a page (How it looks)</li>
+              	<li>CSS helps web designers avoid repetition. Avoiding repetition helps to keep code "clean" and more easily modifiable.</li>
+              	<li>Boxes- webpages are composed of "boxes". &lt;div&gt; tag defines boxes. Class attributes are the labels on boxes.</li>
+			</ul>
+		</div>
+	</div>	
+
+	<div class="section" id="css-3">
+		<h3>3 Ways to add CSS</h3>
+		<div class="text">
+			<ul>
+				<li>Inline CSS - defined within the html tag</li>
+				<li>Internal CSS - difined within the html file</li>
+				<li>External CSS - defined out side html file</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section" id="css-4">
+		<h3>3 Types of selectors</h3>
+		<div class="text">
+			<ul>
+				<li>html tag</li>
+				<li>using classes</li>
+				<li>using id's</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section" id="css-5">
+		<img src="box-model.jpg" alt="box-model" class="image">
+		<h3>The Box Model</h3>
+		<div class="text">
+			<p>Everything on a webpage is a box. Every box has the following:</p>
+
+			<ul>
+				<li>Margin - Space outside the border, which determines how far is it from adjacent boxes</li>
+				<li>Border - Line which marks the boundry of a box</li>
+				<li>Padding - Space between border and content</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="box" id="extra">
+	<h2>Extra</h2>
+	<div class="section" id="extra-1">
+		<h3>Why Computers are Stupid</h3>
+		<div class="text">
+			<p>Computers are stupid because they interpret instructions literally. This makes them very unforgiving since a small mistake by a programmer can cause huge problems in a program.</p>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
